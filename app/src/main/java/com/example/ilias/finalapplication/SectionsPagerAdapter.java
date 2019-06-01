@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.example.ilias.finalapplication.Fragment.MapsFragment;
+import com.example.ilias.finalapplication.Fragment.MyCarsFragment;
 import com.example.ilias.finalapplication.Fragment.UserFragment;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -22,18 +23,12 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 UserFragment requestsFragment = new UserFragment();
                 return requestsFragment;
-
             case 1:
-                MapsFragment chatsFragment = new MapsFragment();
-                return  chatsFragment;
-
+                MyCarsFragment myCarsFragment = new MyCarsFragment();
+                return  myCarsFragment;
             case 2:
-                UserFragment friendsFragment = new UserFragment();
-                return friendsFragment;
-            case 3:
                 MapsFragment mapsFragment = new MapsFragment();
                 return mapsFragment;
-
             default:
                 return  null;
         }
@@ -42,22 +37,19 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return 3;
     }
 
     public CharSequence getPageTitle(int position){
 
         switch (position) {
             case 0:
-                return "REQUESTS";
-
+                return "My profile";
             case 1:
-                return "CHATS";
-
+                return "My CARS";
             case 2:
-                return "FRIENDS";
-            case 3:
                 return "Map";
+
 
 
             default:

@@ -6,9 +6,27 @@
     tools:context=".Fragment.UserFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
+
+    <TextView
+        android:id="@+id/txtNaamUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:text="Naam: Ilias Benchikh" />
+
+    <TextView
+        android:id="@+id/txtEmailUser"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="Email: ilias-benchikh@hotmail.com" />
+
+    </LinearLayout>
 </FrameLayout>

@@ -26,21 +26,39 @@
                     android:id="@+id/btnLeavePlace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="Leave Place" />
 
                 <Button
                     android:id="@+id/btnGetPlace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="Take place" />
 
                 <Button
                     android:id="@+id/btnShowPlace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Button" />
+                    android:text="@string/show_places" />
+
+
+
             </TableRow>
 
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnShowlast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="show latst place" />
+
+                <Button
+                    android:id="@+id/btnStartLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="start latst place" />
+
+            </TableRow>
 
         </TableLayout>
 
